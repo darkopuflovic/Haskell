@@ -1,5 +1,5 @@
 # Haskell
-Simple application written in Haskell which demonstrates the use of different lexical and syntatic language structures.
+Simple application written in Haskell which demonstrates the use of different lexical and syntactic language structures.
 # Screenshots
 Running application and showing steps necessary to reach final state.
 
