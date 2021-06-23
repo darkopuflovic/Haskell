@@ -6,11 +6,11 @@ import Data.Time
 
 main :: IO()
 main = do
-    putStr ("\x1b[32m" ++ "Unesite broj diskova: " ++ "\x1b[31m")
+    putStr ("\x1b[32m" ++ "Enter number of discs: " ++ "\x1b[31m")
     hFlush stdout
     discCount <- getLine
     let n = toInteger (parseInt discCount)
-    putStr ("\x1b[32m" ++ "Unesite \x1b[94m\"T\"\x1b[32m ili \x1b[94m\"t\"\x1b[32m ukoliko zelite da rezultati budu prikazani: \x1b[94m")
+    putStr ("\x1b[32m" ++ "Enter \x1b[94m\"T\"\x1b[32m or \x1b[94m\"t\"\x1b[32m if you want results to be shown: \x1b[94m")
     hFlush stdout
     showResult <- getLine
     let showRes = parseBool showResult
@@ -79,7 +79,7 @@ time func n f i l sf showResult = do
     start <- getCurrentTime
     let hanoiResult = func n f i l
     let result = arrowArray hanoiResult
-    if showResult then printLines result else putStrLn "\x1b[92mRezultati nisu prikazani."
+    if showResult then printLines result else putStrLn "\x1b[92mResults are not shown."
     putStrLn ("\x1b[36mNumber of moves (\x1b[96mhanoi " ++ sf ++ "\x1b[36m): \x1b[31m" ++ show (length hanoiResult))
     end <- getCurrentTime
     endCPU <- getCPUTime
