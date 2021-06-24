@@ -3,8 +3,8 @@ Simple application written in Haskell which demonstrates the use of different le
 # Screenshots
 Running application and showing steps necessary to reach final state.
 
-![Screenshot1](Haskell1.png)
+![Screenshot1](Hanoi1.png)
 
 Running application with higher number of discs, showing only time needed to calculate solution.
 
-![Screenshot2](Haskell2.png)
+![Screenshot2](Hanoi2.png)
